@@ -50,21 +50,11 @@ print("Hello,", user)
 
 password = input("What is your password? ")
 
-def is_valid_password(password):
-    """
-    Checks if a password is at least 8 characters long and contains at least one digit.
-    """
-    if len(password) < 8:
-        return False, "Password must be at least 8 characters long."
-    
-    if not any(char.isdigit() for char in password):
-        return False, "Password must contain at least one digit."
-    
-    return True, "Password is valid."
 
-valid, message = is_valid_password(password)
-
-print(f"Password: '{password}'")
+if len(password) >= 8 and any(char.isdigit() for char in password):
+  print("Password is valid.")
+else:
+     print("Password is invalid. ")
 
 # asking for students score 
 
