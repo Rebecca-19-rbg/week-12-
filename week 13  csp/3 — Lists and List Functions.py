@@ -12,8 +12,30 @@
 # .sort() - sorts the list in acsending order 
 # .reverse() - reverses the order of the list
 
+######################################################################################
 
-# Lists are part o fthe collections family in python. 
+#Why is a list more efficient than a variable ??????
+# A list can hold multiple values while a variable can only hold one value at a time.
+
+
+cakes = ["chocolate", "vanilla", "red velvet", "carrot"]
+print(cakes)
+# access the first item 
+print(cakes[0])    
+#access the last item 
+print(cakes[-1])  
+# want to chocolate cake instead of vanilla
+cakes[0] = "strawberry"
+print(cakes)       
+# remove the last cake 
+cakes.pop()
+print(cakes)  
+# insert a new cake  
+cakes.insert(2, "funfetti")
+print(cakes)
+
+# Lists are part of the collections family in python. 
+
 # Examples:
 
 
@@ -83,13 +105,15 @@ print(fav_food[1:])
 # Add a new item using .append().
 
 fav_food.append("garlic bread")
+print(fav_food)
 
-Remove the first item using .pop(0).
+#Remove the first item using .pop(0).
 
 fav_food.pop(1)
+print(fav_food)
 
-Reverse your list using .reverse().
+#Reverse your list using .reverse().
 
 fav_food.reverse()
-
-Create a list of 3 lists (matrix), and access the middle element.
+print(fav_food)
+#Create a list of 3 lists (matrix), and access the middle element.
