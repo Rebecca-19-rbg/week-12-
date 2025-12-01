@@ -1,3 +1,28 @@
+#EXAMPLES 
+
+fruits =     ("apples", "oramge", "banana", "coconut")
+vegetables = ("celery", "carrots", "potatoes")
+meats =      ("chicken", "fish", "turkey")
+
+groceries = (fruits, vegetables, meats)
+
+print(groceries[2][2])
+print(groceries[2][1])
+
+for collection in groceries:
+    for food in collection:
+        print(food)
+
+
+num_pad = (1, 2, 3), (4, 5, 6), (7, 8, 9), ("*", 0, "#")
+
+for row in num_pad:
+    for num in row:
+        print(num, end="")
+    print()
+
+
+
 # Objective:
 # Students will manipulate nested lists and understand basic list comprehensions.
 
@@ -18,23 +43,24 @@
 
 # Examples:
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
-print(matrix[1][2])    # 6
+# print(matrix[1][2])    # 6
 
-# List comprehension
-first_col = [row[0] for row in matrix]
-print(first_col)       # [1, 4, 7]
+# # List comprehension
+# first_col = [row[0] for row in matrix]
+# print(first_col)       # [1, 4, 7]
 
 
 
 # Practice Problems:
 
 # Build a matrix variable containing 3 lists of 3 numbers each.
+#matrix_examp = ()
 
 # Print the first list.
 
